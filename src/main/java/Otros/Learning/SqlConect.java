@@ -1,4 +1,5 @@
-package Tests.Learning;
+package Otros.Learning;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;

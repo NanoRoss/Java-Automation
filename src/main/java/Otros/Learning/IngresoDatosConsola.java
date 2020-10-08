@@ -1,4 +1,5 @@
-package Tests.Learning;
+package Otros.Learning;
+
 import javax.swing.*;
 import java.util.Scanner;
 

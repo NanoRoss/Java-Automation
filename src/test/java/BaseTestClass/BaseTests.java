@@ -23,7 +23,7 @@ public class BaseTests {
 
     @BeforeClass //@BeforeClass: el método anotado se ejecutará antes de que se el 1er Test de la clase.
     public void setUp(){
-       // System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\Drivers\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setHeadless(true);
         chromeOptions.addArguments("--no-sandbox");
@@ -48,5 +48,8 @@ public class BaseTests {
     public void tearDown(){
         driver.quit();
     }
+
+
+    public void hablar(){System.out.println("Soy clase Base");}
 
 }

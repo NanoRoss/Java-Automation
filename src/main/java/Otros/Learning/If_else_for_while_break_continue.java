@@ -22,7 +22,6 @@ public class If_else_for_while_break_continue {
     @Test(description = "Ejemplo de IF/ELSE BASICO")
     public void TEST_IF_ELSE() {
 
-        System.out.println("HACE TEST");
         int a = 1;
         int b = 1;
         boolean condicion;

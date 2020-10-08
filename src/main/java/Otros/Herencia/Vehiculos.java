@@ -1,10 +1,10 @@
-package Herencia;
+package Otros.Herencia;
 
 public class Vehiculos {
 
-    private String color;
-    private boolean ascientos_cuero;
-    private boolean aire;
+    public String color;
+    public boolean ascientos_cuero;
+    public boolean aire;
     int ruedas;
 
 
@@ -15,18 +15,16 @@ public class Vehiculos {
         this.ruedas = ruedas;
     }
 
-    //Setter
+    //Setters
     public void SetColor(String colorauto){
         this.color = colorauto;
     }
-
     public void SetBooleanAscientos(Boolean cuero){
         this.ascientos_cuero = cuero;
     }
     public void SetBooleanAire(Boolean tieneaire){
         this.aire = tieneaire;
     }
-
     public void SetRuedas(int ruedas){
         this.ruedas = ruedas;
     }
@@ -37,7 +35,6 @@ public class Vehiculos {
         String info = "Color: "+color+" Aire: "+aire+" Ascientos cuero: "+ascientos_cuero+" Ruedas: "+ruedas;
         return info;
     }
-
 
 
 }

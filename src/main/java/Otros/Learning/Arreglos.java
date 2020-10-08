@@ -1,4 +1,4 @@
-package Tests.Learning;
+package Otros.Learning;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;

@@ -1,6 +1,5 @@
-package Herencia;
-import Herencia.*;
-
+package Otros.Herencia;
+import Otros.Herencia.*;
 import java.util.Scanner;
 
 public class Uso_Vehiculos {
@@ -28,14 +27,14 @@ public class Uso_Vehiculos {
 
                 switch(opcion_int) {
                     case 1:
-                        Vehiculos Ve1 = new Herencia.Vehiculos("Azul",true,true,4);
+                        Vehiculos Ve1 = new Vehiculos("Azul",true,true,4);
                         System.out.println(Ve1.ObtenerInfoVehiculo());
                         break;
                     case 2:
                         Autos Au1= new Autos("Amarillo",false,false,4,true);
                         Autos Au2= new Autos("Azul",true,true,4,false);
-                        System.out.println(Au1.ObtenerInfoVehiculo()+", es Taxy: "+Au1.Auto_es_taxy());
-                        System.out.println(Au2.ObtenerInfoVehiculo()+", es Taxy: "+Au2.Auto_es_taxy());
+                        System.out.println(Au1.ObtenerInfoVehiculo());
+                        System.out.println(Au2.ObtenerInfoVehiculo());
                         break;
                 }
         }

@@ -1,4 +1,4 @@
-package Tutorial_PildorasInformaticas;
+package Otros.Tutorial_PildorasInformaticas;
 
 import java.util.Scanner;
 

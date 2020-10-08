@@ -1,4 +1,4 @@
-package Tutorial_PildorasInformaticas;
+package Otros.Tutorial_PildorasInformaticas;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -38,8 +38,6 @@ public class Empleado {
         idSiguiente++;
 
     }
-
-
 
 
 
