@@ -13,8 +13,7 @@ public class Rosario3_Home_Page {
         this.driver = driver;
     }
 
-    public Rosario3_Deportes_Page clickOnMenuDeportes(){
+    public void clickOnMenuDeportes(){
         driver.findElement(Btn_MenuDeportes_xpath).click();
-        return new Rosario3_Deportes_Page(driver);
     }
 }

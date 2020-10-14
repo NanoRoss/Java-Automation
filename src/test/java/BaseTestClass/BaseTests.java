@@ -16,9 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
 
-    private WebDriver driver;
+    public  WebDriver driver;
     public Helpers helpers;
-    protected Rosario3_Home_Page InitialPage;
 
 
     @BeforeClass //@BeforeClass: el método anotado se ejecutará antes de que se el 1er Test de la clase.
@@ -38,8 +37,8 @@ public class BaseTests {
 
     @BeforeMethod //@BeforeTest: el método anotado se ejecutará antes de que se ejecute cualquier Test de la clase.
     public void BeforeMethod() {
-        driver.get("https://www.rosario3.com/");
-        InitialPage = new Rosario3_Home_Page(driver);
+       driver.get("https://www.rosario3.com/");
+      //  InitialPage = new Rosario3_Home_Page(driver);
     }
 
 
@@ -50,6 +49,5 @@ public class BaseTests {
     }
 
 
-    public void hablar(){System.out.println("Soy clase Base");}
 
 }
