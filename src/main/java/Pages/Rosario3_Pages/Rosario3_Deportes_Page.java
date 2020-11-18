@@ -8,7 +8,6 @@ public class Rosario3_Deportes_Page {
 
     public Rosario3_Deportes_Page(WebDriver driver){
         this.driver = driver;
-        System.out.println("___");
     }
 
     public String GetCurrentUrl(){

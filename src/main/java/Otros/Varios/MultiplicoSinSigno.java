@@ -14,7 +14,7 @@ public class MultiplicoSinSigno {
         int resultado = 0;
 
         for (int i=0; i<Math.abs(b);i++){
-        resultado = resultado + Math.abs(a);
+            resultado = resultado + Math.abs(a);
         }
 
         int valor_absoluto_de_a = Math.abs(a);
