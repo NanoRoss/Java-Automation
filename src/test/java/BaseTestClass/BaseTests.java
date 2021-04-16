@@ -1,6 +1,7 @@
 package BaseTestClass;
 
 import Helpers.Helpers;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,10 +23,13 @@ public class BaseTests {
 
     @BeforeClass //@BeforeClass: el método anotado se ejecutará antes de que se el 1er Test de la clase.
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\Drivers\\chromedriver.exe");
+
+        WebDriverManager.chromedriver().setup();
+
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setHeadless(true);
+       // chromeOptions.setHeadless(true);
         chromeOptions.addArguments("--no-sandbox");
+
         driver = new ChromeDriver(chromeOptions); //Creo nuestro Objeto Chromedriver
         driver.manage().window().maximize();
         driver.manage().window().setSize(new Dimension(1920, 1080));
@@ -47,7 +51,5 @@ public class BaseTests {
     public void tearDown(){
         driver.quit();
     }
-
-
 
 }

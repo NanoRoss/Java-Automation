@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class Rosario3_Home_Page {
 
     private WebDriver driver;
-    private By Btn_MenuDeportes_xpath = By.xpath("//a[@class='alt-font uppercase'][contains(text(),'Deportes')]");
+    private By Btn_MenuDeportes_xpath = By.cssSelector("a[title=Deportes]");
 
     public Rosario3_Home_Page(WebDriver driver)
     {
